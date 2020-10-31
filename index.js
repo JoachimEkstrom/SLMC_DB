@@ -7,7 +7,7 @@ const orders = require('./db_querys/orders.js')
 
 
 require('dotenv').config()
-const port = Number(process.env.PORT) 
+const port = process.env.PORT || 3001
 
 app.use(express.json())
 app.use("/users", users)
